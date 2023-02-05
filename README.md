@@ -10,5 +10,13 @@
 6. Run `php artisan migrate --seed` to create the database tables and seed the roles and users tables
 7. Run `php artisan storage:link` to create the storage symlink (if you are using **Vagrant** with **Homestead** for development, remember to ssh into your virtual machine and run the command from there).
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+>>>>>>> 1b92c3b8a91204518e7548f1b2494d37e180d42b
 
 
