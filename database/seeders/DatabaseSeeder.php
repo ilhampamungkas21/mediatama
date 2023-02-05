@@ -22,5 +22,12 @@ class DatabaseSeeder extends Seeder
             'level' => 'admin',
             'password' => Hash::make('secret')
         ]);
+
+        User::factory()->create([
+            'name' => 'customer2',
+            'email' => 'cust2@gmail.com',
+            'level' => 'customer',
+            'password' => Hash::make('customer123')
+        ]);
     }
 }
