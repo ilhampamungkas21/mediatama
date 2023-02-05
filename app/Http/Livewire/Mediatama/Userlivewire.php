@@ -4,6 +4,7 @@ namespace App\Http\Livewire\Mediatama;
 
 use Livewire\Component;
 use App\Models\User;
+use App\Models\ModelCustomerRequest;
 use Illuminate\Support\Facades\Hash;
 use Jantinnerezo\LivewireAlert\LivewireAlert;
 
@@ -132,6 +133,10 @@ class Userlivewire extends Component
 
      public function delete()
      {
+
+
+
+     ModelCustomerRequest::where('id_user',$this->deleteId)->delete();
       User::find($this->deleteId)->delete();
       $this->alert('success', 'Success', [
         'position' => 'top-end',

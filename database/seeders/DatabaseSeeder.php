@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
+use App\Models\ModelVideo;
 
 class DatabaseSeeder extends Seeder
 {
@@ -28,6 +29,21 @@ class DatabaseSeeder extends Seeder
             'email' => 'cust2@gmail.com',
             'level' => 'customer',
             'password' => Hash::make('customer123')
+        ]);
+
+        ModelVideo::factory()->create([
+            'name_video' => 'video 1',
+            'url_video' => 'ixKg_bBdO-0',
+        ]);
+
+        ModelVideo::factory()->create([
+            'name_video' => 'video 2',
+            'url_video' => 'MPqft_YO3TA',
+        ]);
+
+        ModelVideo::factory()->create([
+            'name_video' => 'video 3',
+            'url_video' => 'ob6AgYDgjDY',
         ]);
     }
 }
